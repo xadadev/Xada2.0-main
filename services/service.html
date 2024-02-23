@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Axtra HTML5 Template" />
+
+    <title>Xada | Service</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="/favicon-32x32.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="../../../css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/progressbar.css" />
+    <link rel="stylesheet" href="/assets/css/meanmenu.min.css" />
+    <link rel="stylesheet" href="/assets/css/master.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="dark">
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loading">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+      </div>
+    </div>
+
+    <!-- Switcher Area Start -->
+    <div class="switcher__area">
+      <div class="switcher__icon">
+        <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+        <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="switcher__items">
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">Cursor</h2>
+          </div>
+          <div class="switcher__btn">
+            <select name="cursor-style" id="cursor_style">
+              <option value="1">default</option>
+              <option selected="" value="2">animated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">mode</h2>
+          </div>
+          <div class="switcher__btn mode-type wc-col-2">
+            <button data-mode="light">light</button>
+            <button class="active" data-mode="dark">dark</button>
+          </div>
+        </div>
+
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">Language Support</h2>
+          </div>
+          <div class="switcher__btn lang_dir wc-col-2">
+            <button class="active" data-mode="ltr">LTR</button>
+            <button data-mode="rtl">RTL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Switcher Area End -->
+
+    <!-- Scroll Smoother -->
+    <div class="has-smooth" id="has_smooth"></div>
+
+    <!-- Go Top Button -->
+    <button id="scroll_top" class="scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Header area start -->
+    <header class="header__area-2">
+      <div class="header__inner-2">
+        <div class="header__logo-2">
+          <a href="../index.html">
+            <p class="xada__logo">XADA</p>
+          </a>
+        </div>
+        <div class="header__nav-2">
+          <ul class="main-menu menu-anim">
+            <li class="has-megamenu"><a href="/index.html">home</a></li>
+            <li class="has-megamenu">
+              <a href="/Portfolio/portfolio.html">Portfolio</a>
+            </li>
+            <li class="has-megamenu">
+              <a href="../services/service.html">Services</a>
+            </li>
+            <li class="has-megamenu">
+              <a href="../index.html#about">About</a>
+            </li>
+            <li class="has-megamenu">
+              <a href="../index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__nav-icon-2">
+          <button class="menu-icon-2" id="open_offcanvas">
+            <img src="/assets/imgs/icon/menu-white.png" alt="Menubar Icon" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Offcanvas area start -->
+    <div class="offcanvas__area">
+      <div class="offcanvas__body">
+        <div class="offcanvas__mid">
+          <div class="offcanvas__menu-wrapper">
+            <nav class="offcanvas__menu">
+              <ul class="menu-anim">
+                <li class="has-megamenu"><a href="/index.html">home</a></li>
+                <li class="has-megamenu">
+                  <a href="/Portfolio/portfolio.html" target="_blank"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="has-megamenu">
+                  <a href="../services/service.html">Services</a>
+                </li>
+                <li class="has-megamenu">
+                  <a href="../index.html#about">About</a>
+                </li>
+                <li class="has-megamenu">
+                  <a href="../index.html#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="offcanvas__close">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Offcanvas area end -->
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- Hero area start -->
+          <section class="solution__area">
+            <div class="solution__wrapper">
+              <div class="solution__left">
+                <!-- <div class="solution__img-1">
+                <img src="/assets/imgs/thumb/solution.png" alt="Solution Image">
+              </div> -->
+                <div class="solution__img-2">
+                  <img
+                    src="/assets/imgs/thumb/solution-2.png"
+                    alt="Solution Image"
+                  />
+                </div>
+              </div>
+
+              <div class="solution__mid">
+                <h1 class="solution__title animation__char_come">
+                  Digital Solution
+                </h1>
+                <p>
+                  Transforming ideas into captivating web experiences for global business growth
+                </p>
+              </div>
+
+              <div class="solution__right">
+                <div class="solution__img-3">
+                  <img
+                    src="/assets/imgs/thumb/solution-3.png"
+                    alt="Solution Image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="container pb-130">
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="solution__btm">
+                    <ul>
+                      <li>Approch</li>
+                      <li>Creativity</li>
+                      <li>Experienced</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="solution__shape">
+              <img
+                src="/assets/imgs/icon/1.png"
+                alt="Shape Image"
+                class="shape-1"
+              />
+              <img
+                src="/assets/imgs/icon/2.png"
+                alt="Shape Image"
+                class="shape-2"
+              />
+              <img
+                src="/assets/imgs/icon/3.png"
+                alt="Shape Image"
+                class="shape-3"
+              />
+              <img
+                src="/assets/imgs/icon/4.png"
+                alt="Shape Image"
+                class="shape-4"
+              />
+              <img
+                src="/assets/imgs/icon/5.png"
+                alt="Shape Image"
+                class="shape-5"
+              />
+            </div>
+          </section>
+          <!-- Hero area end -->
+
+          <!-- Service area start -->
+          <section class="service__area-6">
+            <div class="container">
+              <div class="row inherit-row">
+                <div class="col-xxl-12">
+                  <div class="content-wrapper">
+                    <div class="left-content">
+                      <ul class="service__list-6">
+                        <li class="active">
+                          <a href="#service_1">
+                            Custom
+                            <br />Web Design</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#service_2"
+                            >WordPress
+
+                            <br />Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#service_3"
+                            >Theme 
+
+                            <br />Customization</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#service_4"
+                            >ECommerce 
+                            <br />
+                            Solutions</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#service_5">Web 
+
+                             <br />Security</a>
+                        </li>
+                        <li>
+                          <a href="#service_6"
+                            >Hosting 
+
+                            & <br />
+                            Support</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="mid-content">
+                      <div class="service__image">
+                        <img
+                          src="/assets/imgs/service/1.jpg"
+                          alt="Service Image"
+                        />
+                      </div>
+                      <div class="service__image">
+                        <img
+                          src="/assets/imgs/service/22.jpg"
+                          alt="Service Image"
+                        />
+                      </div>
+                      <div class="service__image">
+                        <img
+                          src="/assets/imgs/service/2.jpg"
+                          alt="Service Image"
+                        />
+                      </div>
+                      <div class="service__image">
+                        <img
+                          src="/assets/imgs/service/44.jpg"
+                          alt="Service Image"
+                        />
+                      </div>
+                      <div class="service__image">
+                        <img
+                          src="/assets/imgs/service/55.jpg"
+                          alt="Service Image"
+                        />
+                      </div>
+                      <div class="service__image">
+                        <img
+                          src="/assets/imgs/service/66.jpg"
+                          alt="Service Image"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="right-content">
+                      <div class="service__items-6">
+                        <div
+                          class="service__item-6"
+                          id="service_1"
+                          data-secid="1"
+                        >
+                          <div class="image-tab">
+                            <img
+                              src="/assets/imgs/service/1.jpg"
+                              alt="Service Image"
+                            />
+                          </div>
+
+                          <div>
+                            <h2 class="service__title-6 title-anim">
+                              Tailored Websites for Your Unique Brand
+                            </h2>
+                            <p>
+                              Craft visually appealing and user-friendly
+                              websites tailored to your unique brand identity
+                              and target audience. I combine creative design
+                              principles with modern UX/UI techniques to create
+                              captivating websites that leave a lasting
+                              impression.
+                            </p>
+                            <ul>
+                              <li>+ Brand-focused design</li>
+                              <li>+ Intuitive navigation</li>
+                              <li>+ Typography and colors</li>
+                              <li>+ Engaging visual elements</li>
+                              <li>+ API integration</li>
+                              <li>+ Responsive design</li>
+                            </ul>
+                            <div class="btn_wrapper">
+                              <a
+                                href="#contact"
+                                class="wc-btn-secondary btn-item btn-hover"
+                                ><span></span>Get free <br />qoutes
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="service__item-6"
+                          id="service_2"
+                          data-secid="2"
+                        >
+                          <div class="image-tab">
+                            <img
+                              src="/assets/imgs/service/2.jpg"
+                              alt="Service Image"
+                            />
+                          </div>
+
+                          <div>
+                            <h2 class="service__title-6 title-anim">
+                              Powerful and Scalable WordPress Solutions
+                            </h2>
+                            <p>
+                              Leverage the power and flexibility of WordPress to
+                              build scalable, responsive, and customizable
+                              websites. Whether you need a personal blog, an
+                              e-commerce platform, or a corporate website, I can
+                              bring your vision to life using the extensive
+                              capabilities of WordPress.
+                            </p>
+                            <ul>
+                              <li>+ Custom theme development</li>
+                              <li>+ Top Page builder</li>
+                              <li>+ E-commerce integration</li>
+                              <li>+ Multisite setup</li>
+                              <li>+ Performance optimization</li>
+
+                              <li>+ Platform migration</li>
+                            </ul>
+                            <div class="btn_wrapper">
+                              <a
+                                href="#contact"
+                                class="wc-btn-secondary btn-item btn-hover"
+                                ><span></span>Get free <br />qoutes
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="service__item-6"
+                          id="service_3"
+                          data-secid="3"
+                        >
+                          <div class="image-tab">
+                            <img
+                              src="/assets/imgs/service/3.jpg"
+                              alt="Service Image"
+                            />
+                          </div>
+
+                          <div>
+                            <h2 class="service__title-6 title-anim">
+                              Personalized Themes for Enhanced Branding
+                            </h2>
+                            <p>
+                              Personalize WordPress themes to align with your brand and enhance the visual appeal of your website. From color schemes and typography to layout and graphics, I ensure your website reflects your brand identity and resonates with your target audience.
+                            </p>
+                            <ul>
+                              <li>+ Brand-aligned customization</li>
+                              <li>+ Logo and color integration</li>
+                              <li>+ Custom page templates
+                              </li>
+                              <li>+ CSS styling
+                              </li>
+                              <li>+ Mobile optimization
+                              </li>
+                              <li>+ Custom functionality
+                              </li>
+                            </ul>
+                            <div class="btn_wrapper">
+                              <a
+                                href="#contact"
+                                class="wc-btn-secondary btn-item btn-hover"
+                                ><span></span>Get free <br />qoutes
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="service__item-6"
+                          id="service_4"
+                          data-secid="4"
+                        >
+                          <div class="image-tab">
+                            <img
+                              src="/assets/imgs/service/4.jpg"
+                              alt="Service Image"
+                            />
+                          </div>
+
+                          <div>
+                            <h2 class="service__title-6 title-anim">
+                              Powerful Online Stores for Your Business
+
+                            </h2>
+                            <p>
+                              Build robust and feature-rich eCommerce websites that enable seamless online transactions and enhance your customers' shopping experience. From product showcases to secure payment gateways, I provide comprehensive eCommerce solutions tailored to your business needs.
+                            </p>
+                            <ul>
+                              <li>+ Online store development
+                              </li>
+                              <li>+ Product catalog setup
+                              </li>
+                              <li>+ Shopping cart functionality
+                              </li>
+                              <li>+ Secure payment gateway integration
+                              </li>
+                              <li>+ Order management systems
+                              </li>
+                              <li>+ Inventory management
+                              </li>
+                            </ul>
+                            <div class="btn_wrapper">
+                              <a
+                                href="#contact"
+                                class="wc-btn-secondary btn-item btn-hover"
+                                ><span></span>Get free <br />qoutes
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="service__item-6"
+                          id="service_5"
+                          data-secid="5"
+                        >
+                          <div class="image-tab">
+                            <img
+                              src="/assets/imgs/service/5.jpg"
+                              alt="Service Image"
+                            />
+                          </div>
+
+                          <div>
+                            <h2 class="service__title-6 title-anim">
+                              Protecting Your Website and Data
+
+                            </h2>
+                            <p>
+                              Safeguard your website from potential threats and ensure the security of your users' information. I implement industry-leading security measures and best practices to protect against hacking attempts, malware, and data breaches, providing peace of mind for you and your visitors.
+                            </p>
+                            <ul>
+                              <li>+ SSL certificate installation
+                              </li>
+                              <li>+ Malware scanning and removal
+                              </li>
+                              <li>+ Malware scanning and removal
+                              </li>
+                              <li>+ Firewall setup and configuration
+                              </li>
+                              <li>+ User authentication and access control
+                              </li>
+                              <li>+ Backup and disaster recovery planning
+                              </li>
+                            </ul>
+                            <div class="btn_wrapper">
+                              <a
+                                href="#contact"
+                                class="wc-btn-secondary btn-item btn-hover"
+                                ><span></span>Get free <br />qoutes
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="service__item-6"
+                          id="service_6"
+                          data-secid="6"
+                        >
+                          <div class="image-tab">
+                            <img
+                              src="/assets/imgs/service/4.jpg"
+                              alt="Service Image"
+                            />
+                          </div>
+
+                          <div>
+                            <h2 class="service__title-6 title-anim">
+                             Reliable Hosting and Expert Support
+
+                            </h2>
+                            <p>
+                              Ensure your website operates smoothly and stays accessible to your visitors with reliable hosting solutions and expert support. I provide secure hosting environments, regular backups, and proactive maintenance to keep your website running optimally, allowing you to focus on your business.
+                            </p>
+                            <ul>
+                              <li>+ Domain registration and setup
+                              </li>
+                              <li>+ Hosting setup and configuration
+                              </li>
+                              <li>+  Server management and optimization
+                              </li>
+                              <li>+ Regular backups and data protection
+                              </li>
+                              <li>+ Uptime monitoring and performance optimization
+                              </li>
+                              <li>+ Technical support and issue resolution
+                              </li>
+                            </ul>
+                            <div class="btn_wrapper">
+                              <a
+                                href="#contact"
+                                class="wc-btn-secondary btn-item btn-hover"
+                                ><span></span>Get free <br />qoutes
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Service area end -->
+
+          <!-- Brand area start -->
+          <!-- <section class="brand__area">
+            <div class="container line pt-140 pb-100">
+              <span class="line-3"></span>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <h2 class="brand__title-3 title-anim">
+                    We are happy to work with global largest brands
+                  </h2>
+                  <div class="brand__list brand-gap">
+                    <div class="brand__item-2 fade_bottom">
+                      <img src="/assets/imgs/brand/1.png" alt="Brand Logo" />
+                    </div>
+                    <div class="brand__item-2 fade_bottom">
+                      <img src="/assets/imgs/brand/2.png" alt="Brand Logo" />
+                    </div>
+                    <div class="brand__item-2 fade_bottom">
+                      <img src="/assets/imgs/brand/3.png" alt="Brand Logo" />
+                    </div>
+                    <div class="brand__item-2 fade_bottom">
+                      <img src="/assets/imgs/brand/4.png" alt="Brand Logo" />
+                    </div>
+                    <div class="brand__item-2 fade_bottom">
+                      <img src="/assets/imgs/brand/5.png" alt="Brand Logo" />
+                    </div>
+                    <div class="brand__item-2 fade_bottom">
+                      <img src="/assets/imgs/brand/6.png" alt="Brand Logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->
+          <!-- Brand area end -->
+
+          <!-- CTA area start -->
+          <section class="cta__area">
+            <div class="container line pt-100 pb-110 no-p">
+              <span class="line-3"></span>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="cta__content">
+                    <!-- <p class="cta__sub-title">Work with us</p> -->
+                    <h2 class="cta__title title-anim">
+                      I would love to hear more about your project
+                    </h2>
+                    <div class="btn_wrapper">
+                      <a
+                        href="#contact"
+                        class="wc-btn-primary btn-item btn-hover"
+                        ><span></span>Let’s talk us
+                        <i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- CTA area end -->
+        </main>
+
+      
+  <!-- Footer area -->
+  <section class="portfolio-section portfolio__footer-area pt-130" id="contact">
+    <!-- Contact area start -->
+    <div class="">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+            <div class="sec-title-wrapper">
+              <h2 class="pf-title">Let’s get in touch 🤟</h2>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+            <div class="contact__text">
+              <p>
+                Great! very excited to hear from you and let's start
+                something special togerter. call for any inquery.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+            <div class="pf-contact">
+              <h3>Don't be afraid! <br />say hello</h3>
+              <ul>
+                <li>
+                  <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
+                </li>
+                <li>
+                  <a href="mailto:hello@example.com">hello@example.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pf-social">
+              <h3>follow</h3>
+              <ul>
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Dribble</a></li>
+                <li><a href="#">Meduim</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+            <div class="contact__form">
+              <form data-netlify="true" method="POST" name="contact" value="contact">
+                <div class="row g-3">
+                  <div class="col-xxl-6 col-xl-6 col-12">
+                    <input type="text" name="name" placeholder="Name *" required pattern="[A-Za-z\s]+" />
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-12">
+                    <input type="email" name="email" placeholder="Email *" required />
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-xxl-6 col-xl-6 col-12">
+                    <input type="tel" name="phone" placeholder="Phone" />
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-12">
+                    <input type="text" name="subject" placeholder="Subject *" required />
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <textarea name="message" placeholder="Message *" required></textarea>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="pc-btn">
+                      <button class="wc-btn-dark">Send Me Quotes</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact area end -->
+
+    <!-- Footer area start -->
+    <footer class="portfolio__footer">
+      <div class="container">
+        <div class="pf-btm">
+          <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
+              <div class="footer__copyright-2">
+                <p>
+                  © 2023 | Alrights reserved by
+                  <a href="" target="_blank">Xada</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
+              <div class="footer__nav">
+                <ul class="footer-menu menu-anim">
+                  <a
+                    href="https://www.linkedin.com/in/xadadev/"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/imgs/footer/linkedin.png"
+                      class="footer__social-icon"
+                      alt="linkedin logo"
+                    />
+                  </a>
+                  <a href="https://github.com/xadadev" target="_blank">
+                    <img
+                      src="/assets/imgs/footer/github.png"
+                      class="footer__social-icon"
+                      alt="github logo"
+                    />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/xada_dev/"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/imgs/footer/instagram-logo.png"
+                      class="footer__social-icon"
+                      alt="Instagram Logo"
+                    />
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer area end -->
+  </section>
+  <!-- Footer area end -->
+
+      </div>
+    </div>
+
+    <!-- All JS files -->
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/counter.js"></script>
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/ScrollToPlugin.min.js"></script>
+    <script src="/assets/js/ScrollSmoother.min.js"></script>
+    <script src="/assets/js/SplitText.min.js"></script>
+    <script src="/assets/js/chroma.min.js"></script>
+    <script src="/assets/js/mixitup.min.js"></script>
+    <script src="/assets/js/vanilla-tilt.js"></script>
+    <script src="/assets/js/jquery.meanmenu.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

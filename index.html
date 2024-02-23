@@ -1,0 +1,994 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xada - Portfolio" />
+
+    <title>Xada - Portfolio</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="/favicon-32x32.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="../../../css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/progressbar.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="dark">
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loading">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+      </div>
+    </div>
+
+    <!-- Switcher Area Start -->
+    <div class="switcher__area">
+      <div class="switcher__icon">
+        <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+        <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="switcher__items">
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">Cursor</h2>
+          </div>
+          <div class="switcher__btn">
+            <select name="cursor-style" id="cursor_style">
+              <option value="1">default</option>
+              <option selected="" value="2">animated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">mode</h2>
+          </div>
+          <div class="switcher__btn mode-type wc-col-2">
+            <button data-mode="light">light</button>
+            <button class="active" data-mode="dark">dark</button>
+          </div>
+        </div>
+
+        <div class="switcher__item">
+          <div class="switch__title-wrap">
+            <h2 class="switcher__title">Language Support</h2>
+          </div>
+          <div class="switcher__btn lang_dir wc-col-2">
+            <button class="active" data-mode="ltr">LTR</button>
+            <button data-mode="rtl">RTL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Switcher Area End -->
+
+    <!-- Scroll Smoother -->
+    <div class="has-smooth" id="has_smooth"></div>
+
+    <!-- Go Top Button -->
+    <button id="scroll_top" class="scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Header area start -->
+    <header class="header__area-2">
+      <div class="header__inner-2">
+        <div class="header__logo-2">
+          <a href="index.html">
+          
+            <p class="xada__logo">XADA</p>
+          </a>
+        </div>
+        <div class="header__nav-2">
+          <ul class="main-menu menu-anim">
+            <li class="has-megamenu"><a href="#">home</a></li>
+            <li class="has-megamenu">
+              <a href="/Portfolio/portfolio.html">Portfolio</a>
+            </li>
+            <li class="has-megamenu"><a href="/services/service.html">Services</a></li>
+            <li class="has-megamenu"><a href="#about">About</a></li>
+            <li class="has-megamenu"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header__nav-icon-2">
+          <button class="menu-icon-2" id="open_offcanvas">
+            <img src="assets/imgs/icon/menu-white.png" alt="Menubar Icon" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Offcanvas area start -->
+    <div class="offcanvas__area">
+      <div class="offcanvas__body">
+        <div class="offcanvas__mid">
+          <div class="offcanvas__menu-wrapper">
+            <nav class="offcanvas__menu">
+              <ul class="menu-anim">
+                <li class="has-megamenu"><a href="index.html">home</a></li>
+                <li class="has-megamenu"><a href="#Portfolio">Portfolio</a></li>
+                <li class="has-megamenu"><a href="#service">Services</a></li>
+                <li class="has-megamenu"><a href="#about">About</a></li>
+                <li class="has-megamenu"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="offcanvas__close">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Offcanvas area end -->
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- Hero area start -->
+          <section class="hero__area-2">
+            <div class="hero__inner-2">
+              <div class="sec-title-wrapper">
+                <h2 class="sec-title-3 bg-shape">I Design <br />Unique</h2>
+                <h2 class="sec-title-3">Digital <br />Experience</h2>
+              </div>
+              <div class="hero__text-2">
+                <!-- <p>
+                  As a <strong class="word__ani">Web Designer</strong> and <strong>WordPress Expert,</strong> I create visually stunning websites that captivate audiences and elevate brands. Let me bring your digital vision to life!
+
+                </p> -->
+                <div class="hero__button btn_wrapper">
+                  <a href="/Portfolio/portfolio.html" target="_blank" class="wc-btn-pink btn-hover btn-item"
+                    ><span></span> My <br />
+                    Work <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="hero2-shape">
+              <img src="assets/imgs/bg/arrow-long.png" alt="BG Shape" />
+            </div>
+          </section>
+          <!-- Hero area end -->
+          <!-- Roll area start -->
+          <section class="roll__area-2">
+            <div class="swiper roll__slider">
+              <div class="swiper-wrapper roll__wrapper">
+                <div class="swiper-slide roll__slide">
+                  <h2>Html</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Css</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Saas</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Bootstrap</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Tailwind</h2>
+                </div>
+
+                <div class="swiper-slide roll__slide">
+                  <h2>Javascript</h2>
+                </div>
+
+                <div class="swiper-slide roll__slide">
+                  <h2>Gsap</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Figma</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>WireFrame</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Design</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Ui UX</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>E-COMMERCE</h2>
+                </div>
+
+                <div class="swiper-slide roll__slide">
+                  <h2>GitHub</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Git</h2>
+                </div>
+
+                <div class="swiper-slide roll__slide">
+                  <h2>Vscode</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Roll area end -->
+
+          <!-- Roll area start -->
+          <section class="roll__area-3">
+            <div dir="rtl" class="swiper roll__slider">
+              <div class="swiper-wrapper roll__wrapper">
+                <div class="swiper-slide roll__slide">
+                  <h2>Development</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>WordPress</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Themes</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Plugins</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Elementor</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Woo-commerce</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>responsive design</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>optimized</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>portfolio</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>DIgital SOlution</h2>
+                </div>
+                <div class="swiper-slide roll__slide">
+                  <h2>Strategy</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Roll area end -->
+
+          <!----   About section -->
+          <section
+            class="portfolio-section portfolio__about pt-140 pb-150"
+            id="about"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-xxl-8 col-xxl-8 col-lg-8">
+                  <div class="portfolio__about-left">
+                    <h2 class="sec-title">
+                      I craft wonderful <span>digital experiences</span> for
+                      brands
+                    </h2>
+                    <img src="assets/imgs/shape/16.png" alt="Shape" />
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4">
+                  <div class="sec-text">
+                    <p>
+                      Welcome to my cosy corner of the internet. I am Wahab,
+                      also known as XADA, a skilled web designer and WordPress
+                      specialist from Qatar. Here, I take joy in sharing my work
+                      and aiming to inspire. If you have any specific projects
+                      in mind, I am also available for commissions upon request.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!----   About section end-->
+
+          <!-- Service area  -->
+          <section
+            class="portfolio-section portfolio__service pt-140 pb-140"
+            id="service"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="testimonial__sec-title text-anim">
+                  <h2 class="sec-subtile-6">Services</h2>
+                </div>
+
+                <div class="testimonial__sec-title text-anim">
+                  <h3 class="sec-title-6 title-anim">
+                    I MAKE THE SERVICES BETTER
+                  </h3>
+                  <p>
+                    Ignite your online presence with my transformative services.
+                    From captivating web design to seamless user experiences, I
+                    bring your vision to life. Unlock the true potential of your
+                    business today.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio__service-list">
+                <div class="row">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                    <div class="portfolio__service-item">
+                      <a href="service-details.html">
+                        <h3 class="ps-title">UI / UX</h3>
+                        <ul>
+                          <li>+ Figma</li>
+                          <li>+ WireFrame</li>
+                          <li>+ Sketch</li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                    <div class="portfolio__service-item">
+                      <a href="service-details.html">
+                        <h3 class="ps-title">Web Design</h3>
+                        <ul>
+                          <li>+ Html</li>
+                          <li>+ CSS / Sass</li>
+                          <li>+ Bootstrap</li>
+                          <li>+ Tailwind</li>
+                          <li>+ Javascript</li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                    <div class="portfolio__service-item">
+                      <a href="service-details.html">
+                        <h3 class="ps-title">CMS<br /></h3>
+                        <ul>
+                          <li>+ WordPress</li>
+                          <li>+ Elementor</li>
+                          <li>+ Theme/Plugins</li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="ps-btn">
+                    <a href="contact.html"
+                      >Call me to get more extra service
+                      <strong>call now</strong></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Service area end -->
+
+          <!-- Portfolio area start -->
+          <section class="portfolio__area-2" id="portfolio">
+            <div class="container g-0 line pt-140 pb-140">
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="sec-title-wrapper text-anim">
+                    <h2 class="sec-title-3 title-anim">
+                      Selected <span>Projects</span>
+                    </h2>
+                    <p class="sec-text">
+                      Welcome to a gallery of digital marvels, where each
+                      project reflects the unique blend of creativity and
+                      expertise I bring to the table. From sleek and minimalist
+                      designs to immersive and interactive experiences, this
+                      portfolio showcases my ability to turn visions into
+                      reality and captivate audiences.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper portfolio__slider-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="portfolio__slide-2">
+                    <div class="slide-img">
+                      <a href="/Portfolio/portfolio-details-1.html"
+                        target="_blank"><img
+                          src="assets/imgs/portfolio/organick.png"
+                          alt="Portfolio Image"
+                      /></a>
+                    </div>
+
+                    <!-- ---- Portfolio 1 ---- -->
+                    <div class="slide-content">
+                      <h2 class="sec-title">
+                        <a href="/Portfolio/portfolio-details-1.html"
+                        target="_blank" >Organick <span></span
+                        ></a>
+                      </h2>
+                      <p>Organick - Your One-Stop Shop for Organic Delights</p>
+                      <div class="btn-common-wrap">
+                        <a href="/Portfolio/portfolio-details-1.html" class="btn-common" target="_blank"
+                          >case study <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ---- Portfolio 1 end---- -->
+                <!-- ---- Portfolio 2 ---- -->
+                <div class="swiper-slide">
+                  <div class="portfolio__slide-2">
+                    <div class="slide-img">
+                      <a href="/Portfolio/portfolio-details-2.html"
+                       target="_blank" ><img
+                          src="assets/imgs/portfolio/greendy.png"
+                          alt="Portfolio Image"
+                      /></a>
+                    </div>
+                    <div class="slide-content">
+                      <h2 class="sec-title">
+                        <a href="/Portfolio/portfolio-details-2.html"
+                          target="_blank">Greendy <span></span
+                        ></a>
+                      </h2>
+                      <p>Greendy - Modern Marketing Agency Landing Page</p>
+                      <div class="btn-common-wrap">
+                        <a
+                          href="/Portfolio/portfolio-details-2.html"
+                          class="btn-common" target="_blank"
+                          >case study <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ---- Portfolio 2 end ---- -->
+
+                <!-- ---- Portfolio 3 ---- -->
+                <div class="swiper-slide">
+                  <div class="portfolio__slide-2">
+                    <div class="slide-img">
+                      <a href="/Portfolio/portfolio-details-7.html"
+                       target="_blank" ><img
+                          src="/Portfolio/Basma-clinic/274shots_so.png"
+                          alt="Portfolio Image"
+                      /></a>
+                    </div>
+                    <div class="slide-content">
+                      <h2 class="sec-title">
+                        <a
+                          href="/Portfolio/portfolio-details-7.html"
+                          target="_blank"
+                        >
+                          Basma<span>clinic</span></a
+                        >
+                      </h2>
+                      <p>
+                        Basma Clinic: Where Your Smile Finds Excellence and
+                        Care.
+                      </p>
+                      <div class="btn-common-wrap">
+                        <a
+                          href="/Portfolio/portfolio-details-7.html"
+                          target="_blank"
+                          class="btn-common"
+                          >case study <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ---- Portfolio 3 end ---- -->
+
+                <!-- ---- Portfolio 4 ---- -->
+                <div class="swiper-slide">
+                  <div class="portfolio__slide-2">
+                    <div class="slide-img">
+                      <a href="/Portfolio/portfolio-details-6.html"
+                       target="_blank" ><img
+                          src="/Portfolio/Mars-Design/20shots_so.png"
+                          alt="Portfolio Image"
+                      /></a>
+                    </div>
+                    <div class="slide-content">
+                      <h2 class="sec-title">
+                        <a href="/Portfolio/portfolio-details-6.html"
+                         target="_blank" >Mars Design <span>Works</span></a
+                        >
+                      </h2>
+                      <p>
+                        Mars Design Works: Where Innovation Meets Furniture
+                        Artistry
+                      </p>
+                      <div class="btn-common-wrap">
+                        <a
+                          href="/Portfolio/portfolio-details-6.html"
+                          target="_blank"
+                          class="btn-common"
+                          >case study <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ---- Portfolio 4 end ---- -->
+
+                <!-- ---- Portfolio 5 ---- -->
+                <div class="swiper-slide">
+                  <div class="portfolio__slide-2">
+                    <div class="slide-img">
+                      <a href="/Portfolio/portfolio-details-3.html"
+                        target="_blank"><img
+                          src="assets/imgs/portfolio/explore.png"
+                          alt="Portfolio Image"
+                      /></a>
+                    </div>
+                    <div class="slide-content">
+                      <h2 class="sec-title">
+                        <a href="/Portfolio/portfolio-details-3.html" target="_blank"
+                          >Explore <span>Indonesia</span></a
+                        >
+                      </h2>
+                      <p>Explore Indonesia |Tour Guide company</p>
+                      <div class="btn-common-wrap">
+                        <a href="/Portfolio/portfolio-details-3.html" target="_blank" class="btn-common"
+                          >case study <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ---- Portfolio 5 end ---- -->
+
+                <!-- ---- Portfolio 6 ---- -->
+                <div class="swiper-slide">
+                  <div class="portfolio__slide-2">
+                    <div class="slide-img">
+                      <a
+                        href="/Portfolio/portfolio-details-4.html"
+                        target="_blank"
+                      >
+                        <img
+                          src="assets/imgs/portfolio/food.png"
+                          alt="Portfolio Image"
+                      /></a>
+                    </div>
+                    <div class="slide-content">
+                      <h2 class="sec-title">
+                        <a href="/Portfolio/portfolio-details-4.html" target="_blank"
+                          >Foodyar <span></span
+                        ></a>
+                      </h2>
+                      <p>Foodyar - Embrace the Joy of Eating What You Cook</p>
+                      <div class="btn-common-wrap">
+                        <a
+                          href="/Portfolio/portfolio-details-4.html"
+                          target="_blank"
+                          class="btn-common"
+                          >case study <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ---- Portfolio 6 end ---- -->
+
+                <!-- ---- Portfolio 7 ---- -->
+                <div class="swiper-slide">
+                  <div class="portfolio__slide-2">
+                    <div class="slide-img">
+                      <a href="/Portfolio/portfolio-details-5.html"
+                        target="_blank"><img
+                          src="assets/imgs/portfolio/coffe.jpg"
+                          alt="Portfolio Image"
+                      /></a>
+                    </div>
+                    <div class="slide-content">
+                      <h2 class="sec-title">
+                        <a
+                          href="/Portfolio/portfolio-details-5.html"
+                          target="_blank"
+                          >Koffe <span></span
+                        ></a>
+                      </h2>
+                      <p>Koffe - Awaken Your Senses</p>
+                      <div class="btn-common-wrap">
+                        <a href="/Portfolio/portfolio-details-5.html" target="_blank" class="btn-common"
+                          >case study <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ---- Portfolio 7 end ---- -->
+
+              <div class="portfolio__slider-2-pagination--">
+                <div class="swiper-pagination circle-pagination right"></div>
+              </div>
+            </div>
+          </section>
+          <!-- Portfolio area end -->
+
+          <!-- Workflow area start -->
+          <section class="workflow__area" id="work">
+            <div class="container g-0 line pt-140 pb-140">
+              <div class="line-3"></div>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="sec-title-wrapper">
+                    <h2 class="sec-subtile-6">Workflow</h2>
+                    <h3 class="sec-title title-anim">How I Plan</h3>
+                  </div>
+                </div>
+
+                <div class="col-xxl-12">
+                  <div class="swiper workflow__slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide workflow__slide fade_left">
+                        <h4 class="workflow__step">step 01</h4>
+                        <h5 class="workflow__number">01</h5>
+                        <h6 class="workflow__title">Brief</h6>
+                        <p>
+                          To understand your needs, I begin with an initial brief. This helps me create a tailored proposal aligned with your goals.
+                        </p>
+                      </div>
+
+                      <div class="swiper-slide workflow__slide fade_left">
+                        <h4 class="workflow__step">step 02</h4>
+                        <h5 class="workflow__number">02</h5>
+                        <h6 class="workflow__title">Plan & Sketch</h6>
+                        <p>
+                          Effective websites rely on solid wireframes. They establish layout, and functionality, and prioritize user-centric design.
+                        </p>
+                      </div>
+
+                      <div class="swiper-slide workflow__slide fade_left">
+                        <h4 class="workflow__step">step 03</h4>
+                        <h5 class="workflow__number">03</h5>
+                        <h6 class="workflow__title">Designs</h6>
+                        <p>
+                          Applying paint to your website, I'll make wireframe concepts usable, modern, and clean.
+                        </p>
+                      </div>
+
+                      <div class="swiper-slide workflow__slide fade_left">
+                        <h4 class="workflow__step">step 04</h4>
+                        <h5 class="workflow__number">04</h5>
+                        <h6 class="workflow__title">Code</h6>
+                        <p>
+                          During coding, less communication is needed. I transform the visual design into an interactive, functional reality.
+                        </p>
+                      </div>
+
+                      <div class="swiper-slide workflow__slide fade_left">
+                        <h4 class="workflow__step">step 05</h4>
+                        <h5 class="workflow__number">05</h5>
+                        <h6 class="workflow__title">Launch</h6>
+                        <p>
+                          When it's time to launch, I'll take care of everything. Just get that Tweet ready about your shiny new website!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Workflow area end -->
+
+          <!-- Testimonial area start -->
+          <section class="testimonial__area-4 pt-140 pb-140" id="testimonial">
+            <div class="container g-0 line_4">
+              <div class="line-col-4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="testimonial__sec-title text-anim">
+                    <h2 class="sec-subtile-6">Testimonials</h2>
+                    <h3 class="sec-title-6 title-anim">Clients feedback</h3>
+                    <p>
+                      Trusted by 57+ global customers and teams.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper testimonial__slider-4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial__slide-4">
+                      <img
+                        class="testimonial__img-4 testimonial__femenine"
+                        src="assets/imgs/testimonial/femenine (1).png"
+                        alt="Testimonial Image"
+                      />
+                      <div class="testimonial__info-4">
+                        <h4 class="testimonial__feedback-4"></h4>
+                        <p>
+                          This developer is simply outstanding. his work is
+                          truly awesome and always lives up to the description.
+                          They are the only web developer I hire because I know
+                          that whatever I ask for, they will deliver with
+                          exceptional quality. I highly recommend wahab, and I'm
+                          definitely going to hire them again in the future.
+                        </p>
+                        <h5 class="testimonial__name-4">Lubana Nasser</h5>
+                        <h6 class="testimonial__role-4">
+                          Professor ~ from Oman
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide testimonial__slide-4">
+                      <img
+                        class="testimonial__img-4"
+                        src="assets/imgs/testimonial/masculine.png"
+                        alt="Testimonial Image"
+                      />
+                      <div class="testimonial__info-4">
+                        <h4 class="testimonial__feedback-4"></h4>
+                        <p>
+                          Working with xada was an absolute breeze! The entire
+                          process was fast and easy, without any headaches.
+                          Their communication skills were top-notch, and they
+                          made sure to fulfil all of my requests. I'm
+                          looking forward to collaborating with them again in
+                          the future!
+                        </p>
+                        <h5 class="testimonial__name-4">Erin Marie</h5>
+                        <h6 class="testimonial__role-4">Doctor ~ from USA</h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide testimonial__slide-4">
+                      <img
+                        class="testimonial__img-4"
+                        src="assets/imgs/testimonial/masculine.png"
+                        alt="Testimonial Image"
+                      />
+                      <div class="testimonial__info-4">
+                        <h4 class="testimonial__feedback-4"></h4>
+                        <p>
+                          Awesome work as described and the only web developer I
+                          hire here because what you ask he makes sure the work
+                          will be completed with top quality. I truly recommend
+                          him. I'll hire him again.
+                        </p>
+                        <h5 class="testimonial__name-4">Quant</h5>
+                        <h6 class="testimonial__role-4">
+                          Entrepreneur ~ from UK
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide testimonial__slide-4">
+                      <img
+                        class="testimonial__img-4"
+                        src="assets/imgs/testimonial/masculine.png"
+                        alt="Testimonial Image"
+                      />
+                      <div class="testimonial__info-4">
+                        <h4 class="testimonial__feedback-4"></h4>
+                        <p>
+                          I can't say enough about the exceptional customer
+                          service provided by xada. his communication skills are
+                          simply amazing, and they were always open to feedback
+                          and suggestions. It was a pleasure working with
+                          someone who truly understands the importance of
+                          putting the client first
+                        </p>
+                        <h5 class="testimonial__name-4">Ken McLaughlin</h5>
+                        <h6 class="testimonial__role-4">
+                          Volleyball coach ~ from Canada
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial__btn-4">
+                    <div class="next-button swipper-btn">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="prev-button swipper-btn">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="pagination testimonial__pagination-4">
+                      <div class="pag"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Testimonial area end -->
+        </main>
+
+       <!-- Footer area -->
+  <section class="portfolio-section portfolio__footer-area pt-130" id="contact">
+    <!-- Contact area start -->
+    <!-- Contact area start -->
+<div class="">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+        <div class="sec-title-wrapper">
+          <h2 class="pf-title">Let’s get in touch 🤟</h2>
+        </div>
+      </div>
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+        <div class="contact__text">
+          <p>
+            Great! Very excited to hear from you and let's start
+            something special together. Call for any inquiry.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+        <div class="pf-contact">
+          <h3>Don't be afraid! <br />Say hello</h3>
+          <ul>
+            <li>
+              <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
+            </li>
+            <li>
+              <a href="mailto:hello@example.com">hello@example.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="pf-social">
+          <h3>Follow</h3>
+          <ul>
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">Dribble</a></li>
+            <li><a href="#">Medium</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+        <div class="contact__form">
+          <form  method="POST" name="contact" netlify-honeypot="bot-field" netlify>
+            <!-- Add a hidden field for Netlify's spam protection -->
+            <p class="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="row g-3">
+              <div class="col-xxl-6 col-xl-6 col-12">
+                <input type="text" name="name" placeholder="Name *" required pattern="[A-Za-z\s]+" />
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-12">
+                <input type="email" name="email" placeholder="Email *" required />
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-xxl-6 col-xl-6 col-12">
+                <input type="tel" name="phone" placeholder="Phone" />
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-12">
+                <input type="text" name="subject" placeholder="Subject *" required />
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-12">
+                <textarea name="message" placeholder="Message *" required></textarea>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="pc-btn">
+                  <button class="wc-btn-dark" type="submit">Send Me Quotes</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Contact area end -->
+
+    <!-- Footer area start -->
+    <footer class="portfolio__footer">
+      <div class="container">
+        <div class="pf-btm">
+          <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
+              <div class="footer__copyright-2">
+                <p>
+                  © 2023 | Alrights reserved by
+                  <a href="" target="_blank">Xada</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
+              <div class="footer__nav">
+                <ul class="footer-menu menu-anim">
+                  <a
+                    href="https://www.linkedin.com/in/xadadev/"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/imgs/footer/linkedin.png"
+                      class="footer__social-icon"
+                      alt="linkedin logo"
+                    />
+                  </a>
+                  <a href="https://github.com/xadadev" target="_blank">
+                    <img
+                      src="/assets/imgs/footer/github.png"
+                      class="footer__social-icon"
+                      alt="github logo"
+                    />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/xada_dev/"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/imgs/footer/instagram-logo.png"
+                      class="footer__social-icon"
+                      alt="Instagram Logo"
+                    />
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer area end -->
+  </section>
+  <!-- Footer area end -->
+      </div>
+    </div>
+
+    <!-- All JS files -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
